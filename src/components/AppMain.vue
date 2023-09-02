@@ -1,7 +1,11 @@
 <script>
+import AppLoader from './AppLoader.vue';
 import axios from 'axios';
 export default {
     name: 'AppMain',
+    components:{
+        AppLoader
+    },
     data() {
         return {
             baseUrl: 'http://localhost:8000',
@@ -32,7 +36,8 @@ export default {
 </script>
 <template>
     <div>
-        <div class="container">
+        <AppLoader v-if="loading"/>
+        <div v-else class="container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center">Boolfolio</h1>
