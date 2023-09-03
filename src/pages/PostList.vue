@@ -42,7 +42,7 @@ export default {
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">Boolfolio</h1>
+                    <h1 class="text-center mb-5 mt-3">Boolfolio</h1>
                     <AppLoader v-if="loading"/>
                     <div class="col-4 my-4" v-else v-for="post in posts" :key="post.id">
                         <div class="card h-100">

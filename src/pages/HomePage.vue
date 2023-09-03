@@ -5,10 +5,10 @@ export default {
 </script>
 <template lang="">
     <div>
-        <div class="container mb-5">
+        <div class="container mb-5 mt-3">
             <div class="row">
                 <div class="col-12">
-                    <h1>Boolfolio - Homepage</h1>
+                    <h1 class="text-center">Homepage</h1>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@ export default {
                 <div class="col-12">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad ipsum consequuntur soluta necessitatibus expedita minus! Fugit eveniet sed cum obcaecati, excepturi dolorem, dicta id voluptatibus optio distinctio illo consequuntur?
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non minus assumenda ex quos fugiat rem dignissimos delectus beatae et hic temporibus, dolorum tempora fugit laboriosam, itaque modi eos eaque illo.
-                    
+
                 </div>
             </div>
         </div>
