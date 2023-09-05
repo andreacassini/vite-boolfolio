@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 //IMPORTAZIONE PAGINE
 import HomePage from './pages/HomePage.vue';
 import PostList from './pages/PostList.vue';
+import SinglePost from './pages/SinglePost.vue';
 
 //CREAZIONE ROUTER
 
@@ -16,9 +17,14 @@ const router = createRouter({
             component: HomePage
         },
         {
-            path: '/posts',
+            path: '/blog',
             name: 'posts',
             component: PostList
+        },
+        {
+            path: '/blog/:slug',
+            name: 'single-post',
+            component: SinglePost
         }
     ]
 });
