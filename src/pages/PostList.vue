@@ -69,7 +69,8 @@ export default {
                                 </div>
                             </div>
                             <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Visualizza Post</a>
+                                <!-- <a href="#" class="btn btn-primary">Visualizza Post</a> -->
+                                <router-link class="btn btn-sm btn-primary" :to="{ name: 'single-post', params: { slug: post.slug } }">Visualizza Post</router-link>
                             </div>
                         </div>
                     </div>
