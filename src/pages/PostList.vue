@@ -1,5 +1,6 @@
 <script>
 import AppLoader from '../components/AppLoader.vue';
+import { store } from '../store';
 import axios from 'axios';
 export default {
     name: 'PostList',
@@ -12,7 +13,8 @@ export default {
             posts: [],
             currentPage: 1,
             lastPage: null,
-            loading: true
+            loading: true, 
+            store
         }
     },
     created() {

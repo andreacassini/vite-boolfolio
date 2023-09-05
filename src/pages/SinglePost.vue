@@ -12,13 +12,13 @@ export default {
         }
     },
     created(){
-
+        this.getSinglePost();
     },
     methods:{
         getSinglePost(){
             this.store.loading = true;
-            axios.get(`${this.store.baseUrl}/api/posts/${this.$route.params.slug}`).then((response)=>{
-
+            axios.get(`${this.store.baseUrl}/api/posts/${this.$route.params.slug}`).then((response) => {
+                console.log(response.data);
             });
         }
     }

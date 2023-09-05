@@ -17,12 +17,12 @@ const router = createRouter({
             component: HomePage
         },
         {
-            path: '/blog',
+            path: '/posts',
             name: 'posts',
             component: PostList
         },
         {
-            path: '/blog/:slug',
+            path: '/posts/:slug',
             name: 'single-post',
             component: SinglePost
         }
