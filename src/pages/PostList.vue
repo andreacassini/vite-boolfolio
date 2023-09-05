@@ -48,13 +48,13 @@ export default {
                     <AppLoader v-if="loading"/>
                     <div class="col-4 my-4" v-else v-for="post in posts" :key="post.id">
                         <div class="card h-100">
-                            <img class="card-img-top img-fluid" :src="`${baseUrl}/storage/${post.cover_image}`" :alt="`${post.title}-image`" v-if="post.cover_image">
+                            <img class="card-img-top img-fluid" :src="`${baseUrl}/storage/${post.cover_image}`" :alt="`${post.title}-image`" v-if="post.cover_image"/>
                             <div class="card-body h-50">
                                 <!-- TITLE -->
-                                <h5 class="card-title py-2" v-text="post.title"></h5>
+                                <h3 class="card-title py-2" v-text="post.title"></h3>
 
                                 <!-- DESCRIPTION -->
-                                <p class="card-text py-2" v-text="post.description"></p>
+                                <p class="card-text py-2" v-text="post.content"></p>
 
                                  <!-- TYPE -->
                                 <div class="py-4" v-if="post.type">
